@@ -19,7 +19,7 @@ var RecordForm = React.createClass(
           { record: this.state },
           function(data) {
             that.props.handleNewRecord(data);
-            that.setState(this.getInitialState());
+            that.setState(that.getInitialState());
           },
           'JSON');
       },
